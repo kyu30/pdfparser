@@ -66,7 +66,7 @@ def process():
             try:
                 #os.chdir(str(tdir_path))
                 # parse(input_dir, output_csv_path, exclude_cols)
-                parse.main(str(tdir_path), str(combined_csv), exclude_cols)
+                parse.main(str(tdir_path), "results.csv", exclude_cols)
             finally:
                 os.chdir(prev)
 
